@@ -10,7 +10,24 @@ int main(){
         string name;
         getline(cin, name);
         ofstream file(name.c_str());
-        file<<"This is a newly created file";
+
+
+        time_t timeNow = chrono::system_clock::to_time_t(chrono::system_clock::now());
+
+
+
+
+
+
+
+
+        
+        //time_t timeNow = chrono::system_clock::to_time_t(chrono::system_clock::now());
+        file<<"This is a newly created file" <<ctime(&timeNow)<<"\n";
+
+        //newFile << "File has created\nTime: " << ctime(&timeNow) << endl;
+
+
         file.close();
     }
     else if (operation == "Rename"){

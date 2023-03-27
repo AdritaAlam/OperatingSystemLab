@@ -56,7 +56,8 @@ void findavgTime(int n,int *bt){
 }
 
 int main(){
-    //freopen("inputFCFS.txt", "r", stdin);
+    freopen("inputFCFS.txt", "r", stdin);
+    freopen("outputFCFS.txt", "w", stdout);
     int n;
     cin>>n;
     int process[n];
